@@ -1,0 +1,19 @@
+import random
+choices = ["rock","paper","scissors"]
+while True:
+    user = input("choose rock, paper , or scissors: ").lower()
+    computer = random.choice(choices)
+    print("Computer chose",computer)
+    if user == computer:
+        print("It is a tie")
+    elif (user == "rock" and computer == "scissors"):
+        print("you win the game")
+    elif (user =="paper" and computer == "rock"):
+        print("you win the game")
+    elif(user == "scissors" and computer == "paper"):
+        print("you win the gamee")
+    else:
+        print("you lose the game")
+    again = input("play again? (yes/no):").lower()
+    if again != "yes":
+        break
